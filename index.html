@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Scatterplot Graph</title>
+  </head>
+  <body>
+    <header>
+      <h1>Scatterplot Graph</h1>
+      <small>freecodecamp</small>
+    </header>
+
+    <svg id="canvas">
+      <text id="title" x="250" y="20">
+        Doping in Professional Bicicle Racing
+      </text>
+    </svg>
+    <div id="tooltip"></div>
+    <div id="legend">
+      <p><em>(x) - Axis</em>: Years</p>
+      <p><em>(y) - Axis</em>: Time</p>
+      <span class="icons"
+        ><i class="fas fa-circle" id="orange"></i>Doping Allegations</span
+      ><br />
+      <span class="icons"
+        ><i class="fas fa-circle" id="green"></i>No Doping Allegations</span
+      >
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
